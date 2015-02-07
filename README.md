@@ -1,6 +1,8 @@
 # Octopress Genesis (A work in progress)
 
-A new theme build on Octopress Ink. 
+This is a fork of Octopress Genesis that includes Twitter Bootstrap and a custom version of the Bootswatch Readable theme. 
+
+Note: Bootstrap is built compiled and minimized by Jekyll, instead of being included from a CDN. This might be a terrible idea, but for now it helps during development.
 
 Note: This theme is in alpha development. What's left to do? See [the issues](https://github.com/octopress/genesis-theme/issues/).
 
