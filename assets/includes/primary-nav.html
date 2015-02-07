@@ -8,8 +8,10 @@
         <span class="icon-bar"></span>
       </button>
       
-      <a class="navbar-brand" href="{% return site.root || '/' %}">{{ theme.title }}</a>
-      {% if theme.subtitle %}<small>{{ theme.subtitle }}</small>{% endif %}
+      <div class="navbar-brand">
+      <a href="{% return site.root || '/' %}">{{ theme.title }}</a>
+      	{% if theme.subtitle %}<small>{{ theme.subtitle }}</small>{% endif %}
+      </div>
    
     </div>
 

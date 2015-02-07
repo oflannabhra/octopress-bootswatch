@@ -41,9 +41,14 @@
   }
 
   &-brand {
+    font-family: $headings-font-family;
     padding-top: ($navbar-height - 2*$font-size-large) / 2;
     padding-bottom: ($navbar-height - 2*$font-size-large) / 2;
     line-height: 1.9;
+  }
+  small {
+    color: $headings-small-color;
+    font-size: 65%;
   }
 }
 
