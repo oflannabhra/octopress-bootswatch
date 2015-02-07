@@ -3,14 +3,5 @@
 $center-headings: false;
 
 // Stylesheets
-@import "colors";
-@import "sizes";
-@import "mixins";
-@import "fonts";
-@import "typography";
-@import "theme";
-@import "grid";
-@import "layout";
-@import "header";
-@import "entry";
-@import "post-nav";
+@import "variables";
+@import "bootswatch";
