@@ -5,7 +5,7 @@
 <article class="entry {% return 'excerpted' if excerpted %}" role="article">
   <header class="entry-header">
     <h1 class="entry-title">{{ post.title_link }}</h1>
-    {% if post.subtitle %}<h2 class="entry-subtitle">{{ post.subtitle }}</h2>{% endif %}
+    {% if post.subtitle %}<small class="entry-subtitle">{{ post.subtitle }}</small>{% endif %}
     <div class="entry-meta">{{ post.date_html }}</div>
   </header>
 

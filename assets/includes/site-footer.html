@@ -1,14 +1,16 @@
 <footer class='site-footer' role="contentinfo">
-  <p class='footer-copyright'>Copyright © {{ site.time | date: "%Y" }} - {{ site.author }} - Powered by Octopress</p>
+  <p class='footer-copyright'>Copyright © {{ site.time | date: "%Y" }} - {{ site.author }} - <a href="{{ site.github }}"><span class="fa fa-github"></span></a></p>
+    <div class='hidden-sm hidden-md hidden-lg form-group-sm col-xs-4 col-xs-offset-4'>
+    {% capture search_template %}theme:search/{{ theme.search }}.html{% endcapture %}
+    {% include search_template %}
+  </div>
   {% if theme.footer-nav %}
   <nav class='footer-nav' role="navigation">
     {% for link in theme.footer-nav %}
-      {% assign url = link.url | expand_url %}
-      {% assign class = link.class | classify if link.class %}
-      <a class="primary-nav-link {{ class }}" href="{{ url }}">{{ link.title }}</a>
+    {% assign url = link.url | expand_url %}
+    {% assign class = link.class | classify if link.class %}
+    <a class="primary-nav-link {{ class }}" href="{{ url }}">{{ link.title }}</a>
     {% endfor %}
   </nav>
   {% endif %}
-  {% capture search_template %}theme:search/{{ theme.search }}.html{% endcapture %}
-  {% include search_template %}
 </footer>

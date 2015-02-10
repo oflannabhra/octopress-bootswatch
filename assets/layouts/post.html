@@ -8,8 +8,12 @@ layout: theme:default
     <header class="entry-header">
   {% endif %}
     {% assign title = (page.linkpost ? page.title_link : page.title_html) %}
-    <h1 class="entry-title">{{ title }}</h1>
-    {% if page.subtitle %}<h2 class="entry-subtitle">{{ page.subtitle }}</h2>{% endif %}
+    <h1 class="entry-title">{{ title }}
+      {% if page.subtitle %}
+      <small class="entry-subtitle">{{ page.subtitle }}</small>
+      {% endif %}
+    </h1>
+    
     <div class="entry-meta">{{ page.date_html }}</div>
     <div class="entry-social header">{% include theme:social/post-header.html %}</div>
     {% yield header %}

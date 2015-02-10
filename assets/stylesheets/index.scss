@@ -3,6 +3,11 @@
 $center-headings: false;
 
 // Stylesheets
-@import "variables";
+@import "bootswatch/{{ theme.bootswatch }}-variables";
 @import "bootstrap";
-@import "bootswatch";
+@import "bootswatch/{{ theme.bootswatch }}-bootswatch";
+@import "font-awesome";
+
+body {
+	padding-top: 70px;
+}

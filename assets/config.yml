@@ -30,3 +30,6 @@ post_index:
   read_more_label: "Continue Reading &rarr;"
 
 search: google
+
+bootswatch: readable
+
