@@ -11,16 +11,16 @@ require 'octopress-include-tag'
 require 'octopress-content-for'
 require 'octopress-filter-tag'
 
-require 'octopress-bootswatch-theme/version'
-require 'octopress-bootswatch-theme/category-generator'
+require 'octopress-bootswatch/version'
+require 'octopress-bootswatch/category-generator'
 
 Octopress::Ink.add_plugin({
-  name:          "Octopress Bootswatch Theme",
-  gem:           "octopress-bootswatch-theme",
+  name:          "Octopress Bootswatch",
+  gem:           "octopress-bootswatch",
   path:          File.expand_path(File.join(File.dirname(__FILE__), "../")),
   type:          "theme",
   version:       Octopress::Bootswatch::VERSION,
-  source_url:    "https://github.com/oflannabhra/bootswatch-theme",
-  description:   "A minimalist theme for Jekyll sites build on Octopress Ink"
+  source_url:    "https://github.com/oflannabhra/bootswatch",
+  description:   "A basic theme for Octopress built on Bootswatch and Bootstrap"
 })
 

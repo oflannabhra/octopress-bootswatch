@@ -1,17 +1,19 @@
-# Octopress Genesis (A work in progress)
+# Octopress Bootswatch
 
-This is a fork of Octopress Genesis that includes Twitter Bootstrap and a custom version of the Bootswatch Readable theme. 
+This is the beginnings of a theme for Octopress 3.0 that includes Twitter Bootstrap and Bootswatch.
 
-Note: Bootstrap is built compiled and minimized by Jekyll, instead of being included from a CDN. This might be a terrible idea, but for now it helps during development.
+It is built from an alpha version of Brandon Mathis' Octopress Genesis Theme.
 
-Note: This theme is in alpha development. What's left to do? See [the issues](https://github.com/octopress/genesis-theme/issues/).
+Note: Bootstrap is built, compiled and minimized by Jekyll, instead of being included from a CDN. This might be a terrible idea, but for now it helps during development. Expect your site build to take a couple seconds
+
+Note: This theme is in alpha development.
 
 ## Installation
 
 If you're using bundler add this gem to your site's Gemfile in the `:jekyll_plugins` group:
 
     group :jekyll_plugins do
-      gem 'octopress-genesis-theme'
+      gem 'octopress-bootswatch'
     end
 
 Then install the gem with Bundler
@@ -20,12 +22,12 @@ Then install the gem with Bundler
 
 To install manually without bundler:
 
-    $ gem install octopress-genesis-theme
+    $ gem install octopress-bootswatch
 
 Then add the gem to your Jekyll configuration.
 
     gems:
-      -octopress-genesis-theme
+      -octopress-bootswatch
 
 ## Usage
 
@@ -64,16 +66,31 @@ post_index:
 
 # Center the text in post and page headings.
 center-headings: true
+
+bootswatch: readable
 ```
+## Included
+
+1. Bootstrap
+1. Font Awesome
+1. jQuery
+1. Available Bootswatches
+* [Cerulean](http://bootswatch.com/cerulean)
+* [Cosmo](http://bootswatch.com/cosmo)
+* [Cyborg](http://bootswatch.com/cyborg)
+* [Darkly](http://bootswatch.com/darkly)
+* [Flatly](http://bootswatch.com/flatly)
+* [Lumen](http://bootswatch.com/lumen)
+* [Paper](http://bootswatch.com/paper)
+* [Readable](http://bootswatch.com/readable)
+* [Sandstone](http://bootswatch.com/sandston)
+* [Simplex](http://bootswatch.com/simplex)
+* [Slate](http://bootswatch.com/slate)
+* [Spacelab](http://bootswatch.com/spacelab)
+* [Superhero](http://bootswatch.com/superhero)
+* [United](http://bootswatch.com/united)
+* [Yeti](http://bootswatch.com/yeti)
+* Custom
 
 You can also easily overwrite stylesheets, layouts, partials and basically everything about
-this plugin by adding a copy of that file in the `_plugins/theme` directory. More on that
-later.
-
-## Contributing
-
-1. Fork it ( https://github.com/octopress/genesis-theme/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+this plugin by adding a copy of that file in the `_plugins/theme` directory. If, in your `config.yml` you use `bootswatch: custom`, you can copy the custom theme assets into `_plugins/theme` and editing it as you like.

@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'octopress-bootswatch-theme/version'
+require 'octopress-bootswatch/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "octopress-bootswatch-theme"
+  spec.name          = "octopress-bootswatch"
   spec.version       = Octopress::Bootswatch::VERSION
   spec.authors       = [""]
   spec.email         = [""]
